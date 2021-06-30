@@ -1,16 +1,16 @@
 <template>
 
   <section class="src-components-cuadrados-cuadrado">
-    <div class="square" v-for="(color,index) in colors" :key="index" :style="{'backgroundColor':color}" @click="$emit('onCheckSelection',index)"></div>
+    <div class="square" :style="{backgroundColor:color}"></div>
   </section>
 
 </template>
 
 <script lang="js">
-
+  
   export default  {
     name: 'src-components-cuadrados-cuadrado',
-    props: ['colors'],
+    props: ['color'],
     mounted () {
 
     },
@@ -20,7 +20,9 @@
       }
     },
     methods: {
-      
+      clickCuadrado(){
+        
+      }
     },
     computed: {
 

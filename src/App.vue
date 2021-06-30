@@ -3,7 +3,7 @@
       <br>
       <Header :rgbString="colorDisplayText" :bgcolor="headerBackgroundColor"/>
       <NavBar :rbText="restartButtonText" @onRestart="restart" :txtContent="messageDisplayText" :isHard="getIsHard()" @differenceChanged="differenceChanged($event)"/>
-      <Cuadrado :colors="colors" @checkSelection="checkSelection($event)"/>
+      <Cuadrados :colors="colors" @checkSelection="checkSelection($event)"/>
   </div>
 </template>
 
@@ -11,7 +11,7 @@
 
 import Header from './components/Header.vue'
 import NavBar from './components/NavBar.vue'
-import Cuadrado from './components/Cuadrado.vue'
+import Cuadrados from './components/Cuadrados.vue'
 
 export default {
 
@@ -19,7 +19,7 @@ export default {
   components: {
     Header,
     NavBar,
-    Cuadrado
+    Cuadrados
    
   },
   props:[],
